@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * The woman who has no imagination has no wings
+ * _strdup - copy a string to a newly allocated space in memory
  * @str: string to copy
  *
  * Return: pointer to duplicated string or NULL if error
@@ -28,3 +28,4 @@ char *_strdup(char *str)
 	}
 	return (s);
 }
+

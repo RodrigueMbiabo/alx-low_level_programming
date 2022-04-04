@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * concatenates strings
+ * str_concat - concatenates two strings
  * @s1: first string
  * @s2: second string
  *
@@ -38,3 +38,4 @@ char *str_concat(char *s1, char *s2)
 	s[i + j] = '\0';
 	return (s);
 }
+

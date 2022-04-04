@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * Float like a butterfly, sting like a bee
+ * create_array - creates array of chars & initializes it with a specific char
  * @size: size of array to be created
  * @c: char to initialize array with
  *
@@ -26,3 +26,4 @@ char *create_array(unsigned int size, char c)
 	}
 	return (a);
 }
+
