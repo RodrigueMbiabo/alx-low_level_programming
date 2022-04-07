@@ -1,61 +1,40 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
 
 /**
- * _memcpy - Copy n bytes from memory area src to memory area dest
- * @dest: Memory area to copy to
- * @src: Memory area to copy from
- * @n: Amount to copy from memory area
+ * _realloc - reallocates a memory block using malloc and free.
+ * @ptr: pointer to previously allocated memory
+ * @old_size: size of allocated space for ptr
+ * @new_size: size of newly allocated space
  *
- * Return: Pointer to area
- */
-char *_memcpy(char *dest, char *src, unsigned int n)
-{
-	unsigned int i;
-
-	i = 0;
-	while (i < n)
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	return (dest);
-}
-
-/**
- * _realloc - Reallocate a memory block using malloc
- * @ptr: Old memory block
- * @old_size: Size of of old memory block
- * @new_size: Size the new memory block should be
- *
- * Return: Pointer to new memory space, NULL if it fails
+ * Return: pointer to newly allocated memory, or NULL if failure
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	void *nptr;
-	unsigned int min;
+	char *p;
+	unsigned int i, max = new_size;
+	char *oldp = ptr;
 
 	if (ptr == NULL)
 	{
-		nptr = malloc(new_size);
-		return (nptr);
+		p = malloc(new_size);
+		return (p);
 	}
-	if (ptr != NULL && new_size == 0)
+	else if (new_size == 0)
 	{
 		free(ptr);
 		return (NULL);
 	}
-	if (new_size == old_size)
+	else if (new_size == old_size)
 		return (ptr);
-	if (new_size < old_size)
-		min = new_size;
-	else
-		min = old_size;
-	nptr = malloc(new_size);
-	if (nptr == NULL)
+
+	p = malloc(new_size);
+	if (p == NULL)
 		return (NULL);
-	nptr = _memcpy(nptr, ptr, min);
+	if (new_size > old_size)
+		max = old_size;
+	for (i = 0; i < max; i++)
+		p[i] = oldp[i];
 	free(ptr);
-	return (nptr);
+	return (p);
 }
