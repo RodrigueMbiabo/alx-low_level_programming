@@ -1,4 +1,4 @@
-# 0x12. C - Singly linked lists
+# 0x11. C - Singly linked lists
 ## About
 An introductory project on:
 - How to build and use linked lists
@@ -16,3 +16,8 @@ An introductory project on:
 **[3-add_node_end.c](3-add_node_end.c)** - function that adds a new node at the end of a `list_t` list.
 
 **[4-free_list.c](4-free_list.c)** - function that frees a `list_t` list.
+
+### Advanced
+**[100-first.c](100-first.c)** - function that executes before the main function.
+
+**[101-hello_holberton.asm](101-hello_holberton.asm)** - assembly that prints `Hello, Holberton`, followed by a new line.
