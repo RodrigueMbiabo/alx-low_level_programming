@@ -1,14 +1,13 @@
-# 0x1B. C - Makefiles
+# 0x1C - Makefiles
 ## About
 An introductory project on:
 - Makefiles and how to use them
 - Explicit and implicit rules
 - Setting variables
 ## Requirements
-- Ubuntu 14.04
-- gcc 4.8.4
-- GNU Make 3.81
-- Source files for all Makefiles: [main.c](main.c), [holberton.c](holberton.c), [m.h](m.h)
+- Ubuntu 20.04 LTS
+- gcc 9.3.0
+- GNU Make 4.2.1
 ## File Description
 ### Mandatory
 **[0-Makefile](0-Makefile)**
@@ -61,7 +60,7 @@ An introductory project on:
 
 **[4-Makefile](4-Makefile)**
   * Requirements:
-    * name of the executable: `holberton`
+    * name of the executable: `school`
     * rules: `all`, `clean`, `oclean`, `fclean`, `re`
       * `all`: builds your executable
       * `clean`: deletes all Emacs and Vim temporary files along with the executable
@@ -82,7 +81,7 @@ An introductory project on:
 ### Advanced
 **[100-Makefile](100-Makefile)**
   * Requirements:
-    * name of the executable: `holberton`
+    * name of the executable: `school`
     * rules: `all`, `clean`, `oclean`, `fclean`, `re`
       * `all`: builds your executable
       * `clean`: deletes all Emacs and Vim temporary files along with the executable
