@@ -12,14 +12,14 @@ An introductory project on:
 ### Mandatory
 **[0-Makefile](0-Makefile)**
   * Requirements:
-    * name of the executable: `holberton`
+    * name of the executable: `school`
     * rules: `all`
       * `all`: builds your executable
     * variables: none
     
 **[1-Makefile](1-Makefile)**
   * Requirements:
-    * name of the executable: `holberton`
+    * name of the executable: `school`
     * rules: `all`
       * `all`: builds your executable
     * variables: `CC`, `SRC`
@@ -28,7 +28,7 @@ An introductory project on:
       
 **[2-Makefile](2-Makefile)**
   * Requirements:
-    * name of the executable: `holberton`
+    * name of the executable: `school`
     * rules: `all`
       * `all`: builds your executable
     * variables: `CC`, `SRC`, `OBJ`, `NAME`
@@ -41,7 +41,7 @@ An introductory project on:
 
 **[3-Makefile](3-Makefile)**
   * Requirements:
-    * name of the executable: `holberton`
+    * name of the executable: `school`
     * rules: `all`, `clean`, `oclean`, `fclean`, `re`
       * `all`: builds your executable
       * `clean`: deletes all Emacs and Vim temporary files along with the executable
